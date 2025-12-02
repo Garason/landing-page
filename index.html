@@ -6,68 +6,86 @@
   <title>Andrew K. Garason</title>
 </head>
 
-<body>
+<body class="page">
 
-  <header>
-    <h1>Andrew K. Garason</h1>
-    <p>
-      Entry-level developer with a foundation in HTML, CSS, JavaScript, and Python, backed by years of
-      hands-on operational experience. Driven, detail-oriented, and committed to learning fast and building
-      real solutions.
-    </p>
+  <header class="site-header">
+    <div class="intro">
+      <h1 class="intro-title">Andrew K. Garason</h1>
+      <p class="intro-tagline">
+        Entry-level developer with a foundation in HTML, CSS, JavaScript, and Python, backed by years of
+        hands-on operational experience. Driven, detail-oriented, and committed to learning fast and building
+        real solutions.
+      </p>
+    </div>
 
-    <nav>
-      <ul>
-        <li><a href="#about-me">About Me</a></li>
-        <li><a href="#background">Background</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education & Certifications</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact-me">Contact Me</a></li>
+    <nav class="main-nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a class="nav-link" href="#about-me">About Me</a></li>
+        <li class="nav-item"><a class="nav-link" href="#background">Background</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education &amp; Certifications</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact-me">Contact Me</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
+  <main class="site-main">
 
-    <section id="about-me">
+    <section id="about-me" class="section section--about">
       <h2>About Me</h2>
       <p>
         I’m an aspiring software developer transitioning from high-skill technical work into programming.
         My background in advanced tree climbing, rigging, and safety-critical operations taught me precision,
-        discipline,<br> and the ability to solve problems under pressure — the same mindset I now bring to writing
+        discipline,<br>
+        and the ability to solve problems under pressure — the same mindset I now bring to writing
         clean, reliable code. I’m currently sharpening my skills in HTML, CSS, JavaScript, and Python through
-        hands-on projects, <br> with the goal of building software people can depend on every day.
+        hands-on projects,<br>
+        with the goal of building software people can depend on every day.
       </p>
 
-      <figure id="climbing-photo">
-        <img src="images/treework.jpg" alt="Andrew performing aerial rigging in a tree" height="500" width="500">
-        <img src="images/andrew.jpg" alt="Portrait of Andrew" height="500" width="500">
+      <figure id="climbing-photo" class="about-figure">
+        <img
+          class="about-photo about-photo--tree"
+          src="images/treework.jpg"
+          alt="Andrew performing aerial rigging in a tree"
+          height="500"
+          width="500"
+        >
+        <img
+          class="about-photo about-photo--portrait"
+          src="images/andrew.jpg"
+          alt="Portrait of Andrew"
+          height="500"
+          width="500"
+        >
         <figcaption>This is me doing some aerial rigging.</figcaption>
       </figure>
     </section>
 
-    <section id="background">
+    <section id="background" class="section section--background">
       <h2>Background</h2>
       <p>
         My professional background spans military leadership, technical rigging, logistics, and complex
         operations management. Across these high-stakes environments, I developed strengths that translate
-        directly into software<br>development: breaking down complex systems, managing workflows, solving
-        problems under pressure, and communicating clearly within a team. These experiences built the
-        foundation for my transition into full-stack development.<br> Today, I apply the same disciplined,
-        methodical approach to writing clean code, analyzing requirements, and building reliable digital
-        solutions.
+        directly into software development: breaking down complex systems, managing workflows, solving
+        problems under pressure, and communicating clearly within a team.
+      </p>
+      <p>
+        These experiences built the foundation for my transition into full-stack development.<br>
+        Today, I apply the same disciplined, methodical approach to writing clean code, analyzing requirements,
+        and building reliable digital solutions.
       </p>
     </section>
 
-    <section id="experience">
+    <section id="experience" class="section section--experience">
       <h2>Experience</h2>
 
-      <article>
-        <h3>Operations Manager / Crew Lead</h3>
-        <p><em>Technical Tree Work, Logistics, Field Operations</em></p>
-        <ul>
+      <article class="job">
+        <h3 class="job-title">Operations Manager / Crew Lead</h3>
+        <p class="job-meta"><em>Technical Tree Work, Logistics, Field Operations</em></p>
+        <ul class="job-list">
           <li>Led day-to-day field operations, resource allocation, and workflow execution for multi-site project environments.</li>
           <li>Coordinated equipment, routing, staffing, and on-site logistics across dynamic schedules.</li>
           <li>Implemented structured planning, operational troubleshooting, and risk mitigation techniques.</li>
@@ -76,10 +94,10 @@
         </ul>
       </article>
 
-      <article>
-        <h3>United States Army — Cavalry NCO</h3>
-        <p><em>Active Duty Military Service</em></p>
-        <ul>
+      <article class="job">
+        <h3 class="job-title">United States Army — Cavalry NCO</h3>
+        <p class="job-meta"><em>Active Duty Military Service</em></p>
+        <ul class="job-list">
           <li>Served as a Senior Non-Commissioned Officer responsible for mission execution and team leadership.</li>
           <li>Coordinated operations involving logistics, communication, and equipment readiness.</li>
           <li>Mentored and trained junior soldiers, strengthening communication and leadership skills.</li>
@@ -88,71 +106,71 @@
       </article>
     </section>
 
-    <section id="skills">
+    <section id="skills" class="section section--skills">
       <h2>Skills</h2>
 
-      <h3>Technical Skills</h3>
-      <ul>
+      <h3 class="skills-heading">Technical Skills</h3>
+      <ul class="skills-list skills-list--technical">
         <li><strong>Front-End Development:</strong> HTML5, basic CSS3, JavaScript (ES6+), semantic markup, basic accessibility.</li>
         <li><strong>Back-End Development:</strong> Python fundamentals, data handling, REST API usage, beginner Java OOP.</li>
-        <li><strong>Database & Data Skills:</strong> SQL (DDL, DML), relational modeling, normalization to BCNF.</li>
-        <li><strong>Tools & Workflow:</strong> Git & GitHub, VS Code, Chrome DevTools, SSMS, JSON.</li>
+        <li><strong>Database &amp; Data Skills:</strong> SQL (DDL, DML), relational modeling, normalization to BCNF.</li>
+        <li><strong>Tools &amp; Workflow:</strong> Git &amp; GitHub, VS Code, Chrome DevTools, SSMS, JSON.</li>
       </ul>
 
-      <h3>Operational & Professional Skills</h3>
-      <ul>
-        <li><strong>Leadership & Team Coordination:</strong> experience leading teams, training personnel, and managing high-risk operations.</li>
+      <h3 class="skills-heading">Operational &amp; Professional Skills</h3>
+      <ul class="skills-list skills-list--professional">
+        <li><strong>Leadership &amp; Team Coordination:</strong> experience leading teams, training personnel, and managing high-risk operations.</li>
         <li><strong>Systems Thinking:</strong> ability to break down complex, multi-layered tasks.</li>
         <li><strong>Pressure Decision-Making:</strong> calm, methodical approach in time-sensitive situations.</li>
         <li><strong>Process Discipline:</strong> strong adherence to procedures and documentation.</li>
       </ul>
     </section>
 
-    <section id="education">
-      <h2>Education & Certifications</h2>
+    <section id="education" class="section section--education">
+      <h2>Education &amp; Certifications</h2>
 
-      <article>
-        <h3>Bachelor of Science — Database & Application Programming</h3>
-        <p><em>Liberty University</em></p>
-        <ul>
+      <article class="education-item">
+        <h3 class="education-title">Bachelor of Science — Database &amp; Application Programming</h3>
+        <p class="education-meta"><em>Liberty University</em></p>
+        <ul class="education-list">
           <li>Coursework in programming, SQL, data structures, and application development.</li>
           <li>Studying HTML/CSS/JS, Python, Java fundamentals, and database design.</li>
         </ul>
       </article>
 
-      <article>
-        <h3>Technology Skills Training & Self-Directed Study</h3>
-        <p><em>Independent Learning</em></p>
-        <ul>
+      <article class="education-item">
+        <h3 class="education-title">Technology Skills Training &amp; Self-Directed Study</h3>
+        <p class="education-meta"><em>Independent Learning</em></p>
+        <ul class="education-list">
           <li>Foundational training in HTML, CSS, JavaScript, and responsive web design.</li>
           <li>Developing proficiency in Python, SQL, DOM scripting, and full-stack workflows.</li>
         </ul>
       </article>
 
-      <article>
-        <h3>Professional & Technical Certifications</h3>
-        <ul>
-          <li>NC CDL License & technical operations training.</li>
+      <article class="education-item">
+        <h3 class="education-title">Professional &amp; Technical Certifications</h3>
+        <ul class="education-list">
+          <li>NC CDL License &amp; technical operations training.</li>
           <li>U.S. Army leadership courses.</li>
           <li>Software development certifications (in progress): HTML/CSS/JS, Python, SQL, networking.</li>
         </ul>
       </article>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="section section--projects">
       <h2>Projects</h2>
       <p>Projects coming soon — this section will highlight practical work as it is completed.</p>
     </section>
 
   </main>
 
-  <footer>
-    <section id="contact-me">
+  <footer class="site-footer">
+    <section id="contact-me" class="section section--contact">
       <h2>Contact Me</h2>
       <p>If you'd like to reach out about opportunities, collaborations, or questions, feel free to contact me using the methods below.</p>
-      <ul>
-        <li><strong>Email:</strong> <a href="mailto:andrewgarason@gmail.com">Contact Me</a></li>
-        <li><strong>GitHub:</strong> <a href="https://github.com/Garason" target="_blank">github.com/Garason</a></li>
+      <ul class="contact-list">
+        <li class="contact-item"><strong>Email:</strong> <a href="mailto:andrewgarason@gmail.com">Contact Me</a></li>
+        <li class="contact-item"><strong>GitHub:</strong> <a href="https://github.com/Garason" target="_blank">github.com/Garason</a></li>
       </ul>
     </section>
   </footer>
