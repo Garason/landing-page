@@ -1,159 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Andrew K. Garason | Portfolio</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrew K. Garason</title>
+  <link rel="stylesheet" href="style/style.css">
 </head>
 
-<body>
+<body class="page">
+
   <header class="site-header">
-    <div class="container header-content">
-      <h1>Andrew K. Garason</h1>
-      <p class="tagline">
-        Entry-level developer with a foundation in HTML, CSS, JavaScript, and Python, backed by years of hands-on operational leadership.
+    <div class="intro">
+      <h1 class="intro-title">Andrew K. Garason</h1>
+
+      <p class="intro-tagline">
+        Entry-level developer with a foundation in HTML, CSS, JavaScript, and Python,
+        backed by years of hands-on operational experience. Driven, detail-oriented,
+        and committed to learning fast and building real solutions.
       </p>
 
-      <nav class="main-nav">
-        <a href="#about">About</a>
-        <a href="#background">Background</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <div class="header-links">
+        <a href="mailto:andrew.garason@gmail.com">Email Me</a>
+        <a href="https://github.com/garason" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/andrewgarason" target="_blank">LinkedIn</a>
+      </div>
     </div>
   </header>
 
-  <main>
-    <section id="about" class="section">
-      <div class="container two-column">
-        <div>
-          <h2>About Me</h2>
+  <main class="content">
+
+    <section class="card">
+      <h2>About Me</h2>
+      <p>
+        I am completing my B.S. in Information Technology: Application and Database
+        Development. My background includes leadership, operations management, systems
+        analysis, and hands-on technical work. I am currently building projects that
+        combine business process improvement with web development and database design.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Technical Skills</h2>
+
+      <div class="skills-grid">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Python</span>
+        <span>SQL</span>
+        <span>GitHub</span>
+        <span>Visio</span>
+        <span>Azure Fundamentals</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Portfolio Projects</h2>
+
+      <div class="project-grid">
+
+        <article class="project-card">
+          <h3>TTOMS Landing Page</h3>
           <p>
-            I’m an aspiring software developer with a background in high-risk technical fieldwork. Advanced tree climbing and rigging taught me precision, discipline, and problem-solving under pressure. I now apply those same skills to programming, focusing on HTML, CSS, JavaScript, Python, and real-world software projects.
+            Main mockup page for the Triage Treecare Operations Management System.
           </p>
-        </div>
+          <a href="https://garason.github.io/TTOMS/" target="_blank">View Project</a>
+        </article>
 
-        <div class="image-grid">
-          <img src="images/treework.jpg" alt="Andrew performing aerial rigging in a tree" />
-          <img src="images/andrew.jpg" alt="Portrait of Andrew" />
-        </div>
-      </div>
-    </section>
-
-    <section id="background" class="section section-alt">
-      <div class="container">
-        <h2>Background</h2>
-        <p>
-          My professional background spans military leadership, technical rigging, logistics, and operations management. Across these high-stakes environments, I developed strengths that translate directly into software development: breaking down complex systems, managing workflows, solving problems under pressure, and communicating clearly within a team.
-        </p>
-      </div>
-    </section>
-
-    <section id="experience" class="section">
-      <div class="container">
-        <h2>Experience</h2>
-
-        <div class="card">
-          <h3>Operations Manager / Crew Lead</h3>
-          <p class="meta">Technical Tree Work, Logistics, Field Operations</p>
-          <ul>
-            <li>Led daily field operations, resource allocation, and workflow execution.</li>
-            <li>Coordinated equipment, routing, staffing, and job-site logistics.</li>
-            <li>Trained and supervised field teams in high-risk environments.</li>
-            <li>Maintained safety, documentation, and procedural discipline.</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>United States Army — Cavalry NCO</h3>
-          <p class="meta">Active Duty Military Service</p>
-          <ul>
-            <li>Served as a Senior Non-Commissioned Officer responsible for mission execution and team leadership.</li>
-            <li>Coordinated logistics, communication, equipment readiness, and training.</li>
-            <li>Mentored junior soldiers and maintained composure under pressure.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills" class="section section-alt">
-      <div class="container">
-        <h2>Skills</h2>
-
-        <div class="skills-grid">
-          <div class="card">
-            <h3>Technical Skills</h3>
-            <ul>
-              <li>HTML5, CSS3, JavaScript</li>
-              <li>Python fundamentals</li>
-              <li>SQL and relational database design</li>
-              <li>Git, GitHub, VS Code, SSMS</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <h3>Professional Skills</h3>
-            <ul>
-              <li>Leadership and team coordination</li>
-              <li>Systems thinking</li>
-              <li>Process improvement</li>
-              <li>Problem-solving under pressure</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="education" class="section">
-      <div class="container">
-        <h2>Education & Certifications</h2>
-
-        <div class="card">
-          <h3>Bachelor of Science — Database & Application Programming</h3>
-          <p class="meta">Liberty University</p>
+        <article class="project-card">
+          <h3>Office Admin Dashboard</h3>
           <p>
-            Coursework in programming, SQL, data structures, database design, and application development.
+            Dashboard mockup for service requests, work orders, crews, fleet, and reports.
           </p>
-        </div>
+          <a href="https://garason.github.io/TTOMS/admin.html" target="_blank">View Page</a>
+        </article>
 
-        <div class="card">
-          <h3>Professional Training</h3>
-          <ul>
-            <li>NC CDL License</li>
-            <li>U.S. Army leadership courses</li>
-            <li>Software development certifications in progress</li>
-          </ul>
-        </div>
+        <article class="project-card">
+          <h3>Crew Leader Dashboard</h3>
+          <p>
+            Field-facing mockup for assigned jobs, job updates, and completion tracking.
+          </p>
+          <a href="https://garason.github.io/TTOMS/crew.html" target="_blank">View Page</a>
+        </article>
+
+        <article class="project-card">
+          <h3>Customer Service Portal</h3>
+          <p>
+            Customer-facing mockup for submitting tree service requests.
+          </p>
+          <a href="https://garason.github.io/TTOMS/customer.html" target="_blank">View Page</a>
+        </article>
+
       </div>
     </section>
 
-    <section id="projects" class="section section-alt">
-      <div class="container">
-        <h2>Projects</h2>
-
-        <div class="card">
-          <h3>Matrix Compatibility Survey</h3>
-          <p>A beginner web project built to practice HTML, CSS, and basic site structure.</p>
-          <a class="button" href="../survey-app/index.html">View Project</a>
-        </div>
-      </div>
-    </section>
   </main>
 
-  <footer id="contact" class="site-footer">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>Reach out about opportunities, collaborations, or questions.</p>
-
-      <div class="footer-links">
-        <a href="mailto:andrewgarason@gmail.com">Email Me</a>
-        <a href="https://github.com/Garason?tab=repositories" target="_blank">GitHub</a>
-      </div>
-    </div>
+  <footer class="site-footer">
+    <p>&copy; 2026 Andrew K. Garason</p>
   </footer>
+
 </body>
 </html>
